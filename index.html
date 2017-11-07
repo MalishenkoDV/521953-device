@@ -2,83 +2,154 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" 
-              rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-<img  src="#" title="DEVICE" height="100" width="100">
-Поиск по сайту
-Войти
-Сравнить
-Корзина
-КАТАЛОГ ТОВАРОВ
-ДОСТАВКА
-ГАРАНТИЯ
-КОНТАКТЫ
+    <header>
+      <nav>
+        <a class="logo">Device</a>
+        <input type="search" placeholder="Поиск по сайту" tabindex="1">
+        Каталог товаров
+      </nav>
+      <div>
+        <span class="for-client" tabindex="2"><img src="#" alt="Войти"><a href="#">Войти</a></span>
+        <span class="for-client" tabindex="3"><img src="#" alt="Сравнить"><a href="#">Сравнить</a></span>
+        <span class="for-client" tabindex="4"><img src="#" alt="Корзина"><a href="#">Корзина</a></span>
+      </div>
+      <select name="catalog-group">
+          <option selected tabindex="5">Каталог товаров</option>
+          <option tabindex="6">Моноподы</option>
+      </select>
+      <div>
+        <ul class="footer-services">
+          <li><a href="#" tabindex="7">Доставка</a></li>
+          <li><a href="#" tabindex="8">Гарантия</a></li>
+          <li><a href="#" tabindex="9">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+        <a class="right-to-us" href="#" tabindex="10"><img src="#" width="250" height="250" alt="Восьмиметровый, сцуко, монопод"></a>
+      <h1>Делай селфи, как Бен Стиллер!</h1>
+      <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и всего 5 килограмм.</p>
+      <a class="more-info" href="#" tabindex="11">Подробнее</a>
 
-<b>Делай селфи, как Бен Стиллер!</b>
-Самая длинная палка для селфи доступна в нашем магазине.
-Восемь (Восемь, Карл!) метров длиной и всего 5 килограмм.
-ПОДРОБНЕЕ
-<ul>
-  <li>8,5 м Длина палки</li>
-  <li>5 кг Вес палки</li>
-  <li>Карбон Материал</li>
-</ul>
+      <ul>
+        <li>
+        <b>8,5 м</b><br>
+        <p>Длина палки</p>
+      </li>
+      <li>
+        <b>5 кг</b><br>
+        <p>Вес палки</p>
+      </li>
+      <li>
+        <b>Карбон</b><br>
+        <p>Материал</p></li>
+      </ul>
 
-Виртуальная реальность
-Моноподы для селфи
-Экшн-камеры
-фитнес-браслеты
-Умные часы
-Квадрокоптеры
+      <table>
+        <tr class="catalog-categories">
+          <td><a href="#"><img src="#" height="150" width="150" alt="Виртуальная реальность"></a></td>
+          <td><a href="#"><img src="#" height="150" width="150" alt="Моноподы для селфи"></a></td>
+          <td><a href="#"><img src="#" height="150" width="150" alt="Экшн-камеры"></a></td>
+          <td><a href="#"><img src="#" height="150" width="150" alt="Фитнес-браслеты"></a></td>
+          <td><a href="#"><img src="#" height="150" width="150" alt="Умные часы"></a></td>
+          <td><a href="#"><img src="#" height="150" width="150" alt="Квадрокоптеры"></a></td>
+        </tr>
+        <tr>
+          <td><a href="#"><h4>Виртуальная реальность</h4></a></td>
+          <td><a href="#"><h4>Моноподы для селфи</h4></a></td>
+          <td><a href="#"><h4>Экшн-камеры</h4></a></td>
+          <td><a href="#"><h4>Фитнес-браслеты</h4></a></td>
+          <td><a href="#"><h4>Умные часы</h4></a></td>
+          <td><a href="#"><h4>Квадрокоптеры</h4></a></td>
+        </tr>
+      </table>
+      <!-- Виртуальная реальность
+      Моноподы для селфи
+      Экшн-камеры
+      Фитнес-браслеты
+      Умные часы
+      Квадрокоптеры -->
 
-ДОСТАВКА
-Доставка
-Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно<!DOCTYPE html>
-Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+      <section class="services">
+        <table>
+          <tr>
+            <td>
+              <h3>Доставка</h3>
+            </td>
+            <td>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Гарантия</h3>
+            </td>
+            <td>Гарантия от производителя, и у каждой позиции товара индивидуальная.</td>
+          <tr>
+            <td>
+              <h3>Кредит</h3>
+            </td>
+            <td>Наши партнеры предлагают лояльные проценты на пол года!</td>
+        </table>
+      </section>
+      <section class="popular-brands">
+        <h2 class="visually-hidden">Популярные бренды</h2>
+        <ul class="brands">
+          <li>DJI</li>
+          <li>SP Gadgets</li>
+          <li>GoPro</li>
+          <li>VIVE</li>
+        </ul>
+      </section>
 
-ГАРАНТИЯ
+      <section class="about-us">
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! <strong>Device</strong> работает со многими транспортными кмпаниями:</p>
+        <ul class="about-devivery">
+          <li><a href="#">Деловые Линии</a></li>
+          <li><a href="#">Автотрединг</a></li>
+          <li><a href="#">ЖелДорЭкспедиция</a></li>
+        </ul>
+        <a class="detail-about-us" href="#" tabindex="115">Подробнее о нас</a>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <a class="contacts-map" href="#"><img src="#" alt="Карта" height="200" width="200"></a>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <a class="right-to-us" href="#" tabindex="12">Напишите нам</a>
+      </section>
+    </main>
+    <!--Футер!!!-->
+    <footer>
+      <div><a class="logo">DEVICE</a>
+        <p>г. Москва, ул. Строителей, 15</p>
+      </div>
+      <div>
+        <ul class="footer-services">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><a href="https://www.facebook.com/htmlacademy" tabindex="19"><img src="#" alt="Фейсбук" width="50" height="50"></a></li>
+          <li><a href="https://www.instagram.com/htmlacademy/" tabindex="20"><img src="#" alt="Инстаграм" width="50" height="50"></a></li>
+          <li><a class="social-button" href="https://twitter.com/htmlacademy_ru" tabindex="18"><img src="#" alt="Твиттер" width="50" height="50"></a></li>
+        </ul>
+      </div>
 
-КРЕДИТ
-
-DJI
-SP Gadgets
-GoPro
-VIVE
-
-О нас
-Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными кмпаниями:
-Делвые Линии
-Автотрединг
-ЖелДорЭкспедиция
-
-ПОДРОБНЕЕ О НАС
-
-Контакты
-Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
-<footer>
-<div>DEVICE
-г. Москва, ул. Строителей, 15</div>
-<div>
-  <ul>
-    <li>ДОСТАВКА</li>
-    <li>ГАРАНТИЯ</li>
-    <li>КОНТАКТЫ</li>
-  </ul>
-</div>
-<div>Facebook
-Instagram
-Twitter</div>
-
-<div>Войти
-Сравнить
-Корзина</div>
-
-<div>Тел.: +7 (495) 495-95-95
-HTML Academy
-</div>
-</footer>
-</body></html>
+      <div>
+        <span class="for-client" tabindex="16"><img src="#" alt="Войти"><a href="#">Войти</a></span>
+        <span class="for-client" tabindex="17"><img src="#" alt="Сравнить"><a href="#">Сравнить</a></span>
+        <span class="for-client" tabindex="18"><img src="#" alt="Корзина"><a href="#">Корзина</a></span>
+      </div>
+      <div><p>Тел.: +7 (495) 495-95-95</p>
+        <a class="copyright" href="https://htmlacademy.ru" tabindex="13"><img src="#" alt="HTML Academy" width="70" height="70"></a>
+      </div>
+    </footer>
+  </body>
+</html>

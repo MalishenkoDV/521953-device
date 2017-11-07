@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>HTML Academy: Девайс-Каталог</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo">Device</a>
+        <input type="search" placeholder="Поиск по сайту" tabindex="1">
+      </nav>
+      <div>
+        <span class="for-client" tabindex="2"><img src="#" alt="Войти"><a href="#">Войти</a></span>
+        <span class="for-client" tabindex="3"><img src="#" alt="Сравнить"><a href="#">Сравнить</a></span>
+        <span class="for-client" tabindex="4"><img src="#" alt="Корзина"><a href="#">Корзина</a></span>
+      </div>
+      <select name="catalog-group">
+        <option selected tabindex="5">Каталог товаров</option>
+        <option tabindex="6">Моноподы</option>
+      </select>
+      <div>
+        <ul class="footer-services">
+          <li><a href="#" tabindex="7">Доставка</a></li>
+          <li><a href="#" tabindex="8">Гарантия</a></li>
+          <li><a href="#" tabindex="9">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1>Моноподы для селфи</h1>
+
+      <ul class="breadcrumbs">
+        <li><a href="index.html" tabindex="10">Главная</a></li>
+        <li><a href="catalog.html" tabindex="11">Каталог товаров</a></li>
+        <li class="breadcrumbs-current">Моноподы для селфи</li>
+      </ul>
+
+
+      <h3>Фильтр:</h3>
+
+      <form method="post" oninput="price-min.value=price-range.value">
+        <label for="price-range">Стоимость</label>
+        <div>
+          <input type="range" name="price-range" id="price-range" min="0" max="5000" step="1">
+        </div>
+        <div>
+          <ul>
+            <li><output name="price-min">от 0</output></li>
+            <li><output >до 5000</output></li>
+          </ul>
+        </div>
+      </form>
+      <label>Цвет</label>
+      <ul>
+        <li>
+          <input type="checkbox" name="color-black" id="color-black" checked>
+          <label for="color-black">Черный</label>
+        </li>
+        <li>
+          <input type="checkbox" name="color-white" id="color-white">
+          <label for="color-white">Белый</label>
+        </li>
+        <li>
+          <input type="checkbox" name="color-blue" id="color-blue" checked>
+          <label for="color-blue">Синий</label>
+        </li>
+        <li>
+          <input type="checkbox" name="color-red" id="color-red" checked>
+          <label for="color-red">Красный</label>
+        </li>
+        <li>
+          <input type="checkbox" name="color-pink" id="color-pink">
+          <label for="color-pink">Розовый</label>
+        </li>
+      </ul>
+
+      <div>
+        <label>Bluetoth</label>
+        <ul>
+          <li>
+            <input type="radio" name="bt-yes" id="bt-yes" checked>
+            <label for="bt-yes">Есть</label>
+          </li>
+          <li>
+            <input type="radio" name="bt-no" id="bt-no">
+            <label for="bt-no">Нет</label>
+          </li>
+        </ul>
+      </div>
+      <input type="button" value="Показать">
+      <h3>Сортировка:</h3>
+      <div>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-current">По цене</li>
+          <li><a href="#" tabindex="12">По цене</a></li>
+          <li><a href="#" tabindex="13">По типу</a></li>
+          <li><a href="#" tabindex="14">По популярности</a></li>
+        </ul>
+      </div>
+      <section>
+        <ul>
+          <li>
+            <a class="catalog-photo" href="#"><img src="#" height="200" width="200" alt="Любительская селфи-палка"></a>
+            <input type="button" value="Купить">
+            <h3>Любительская селфи-палка</h3>
+            <p>500 руб.</p>
+          </li>
+          <li>
+            <a class="catalog-photo" href="#"><img src="#" height="200" width="200" alt="Профессиональная селфи-палка"></a>
+            <input type="button" value="Купить">
+            <h3>Профессиональная селфи-палка</h3>
+            <p>1500 руб.</p>
+          </li>
+          <li>
+            <a class="catalog-photo" href="#"><img src="#" height="200" width="200" alt="Непотопляемая селфи-палка"></a>
+            <input type="button" value="Купить">
+            <h3>Непотопляемая селфи-палка</h3>
+            <p>2500 руб.</p>
+          </li>
+          <li>
+            <a class="catalog-photo" href="#"><img src="#" height="200" width="200" alt="Селфи-палка «Следуй за мной»"></a>
+            <input type="button" value="Купить">
+            <h3>Селфи-палка «Следуй за мной»</h3>
+            <p>4900 руб.</p>
+          </li>
+        </ul>
+      </section>
+      <div>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-current">Назад</li>
+          <li class="breadcrumbs-current">1</li>
+          <li><a href="#" tabindex="15">2</a></li>
+          <li><a href="#" tabindex="16">3</a></li>
+          <li><a href="#" tabindex="17">Вперед</a></li>
+        </ul>
+      </div>
+    </main>
+    <!--Футер!!!-->
+    <footer>
+      <div><a class="logo">DEVICE</a>
+        <p>г. Москва, ул. Строителей, 15</p>
+      </div>
+      <div>
+        <ul class="footer-services">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><a href="https://www.facebook.com/htmlacademy" tabindex="18"><img src="#" alt="Фейсбук" width="50" height="50"></a></li>
+          <li><a href="https://www.instagram.com/htmlacademy/" tabindex="19"><img src="#" alt="Инстаграм" width="50" height="50"></a></li>
+          <li><a class="social-button" href="https://twitter.com/htmlacademy_ru" tabindex="20"><img src="#" alt="Твиттер" width="50" height="50"></a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="for-client" tabindex="21"><img src="#" alt="Войти"><a href="#">Войти</a></span>
+        <span class="for-client" tabindex="22"><img src="#" alt="Сравнить"><a href="#">Сравнить</a></span>
+        <span class="for-client" tabindex="23"><img src="#" alt="Корзина"><a href="#">Корзина</a></span>
+      </div>
+      <div><p>Тел.: +7 (495) 495-95-95</p>
+        <a class="copyright" href="https://htmlacademy.ru" tabindex="24"><img src="#" alt="HTML Academy" width="70" height="70"></a>
+      </div>
+    </footer>
+  </body>
+</html>
