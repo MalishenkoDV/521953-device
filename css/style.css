@@ -1,0 +1,72 @@
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensanslight.woff") format('woff'),
+  url("../fonts/opensanslight.woff2") format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"), local("OpenSans"), url("../fonts/opensans.woff") format('woff'),
+  url("../fonts/opensans.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Light"), local("Gilroy-Light"), url("../fonts/gilroylight.woff") format('woff'),
+  url("../fonts/gilroylight.woff2") format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("../fonts/gilroyextrabold.woff") format('woff'),
+  url("../fonts/gilroyextrabold.woff2") format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Разметка тегов */
+
+body {
+  min-width: 1200px;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.3em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+
+/* Хедер */
+
+header {
+  background-color: #f7e296;
+  margin-top: 40px;
+  height: 299px;
+  width: 1160px;
+  padding: 0 60px 47px 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* Содержательная часть сайта (Мейн) */
+
+h1{
+
+}
+
+h2 {
+
+}
+
