@@ -31,42 +31,298 @@
   font-style: normal;
 }
 
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.visually-hidden {
+  display: none;
+}
 /* Разметка тегов */
+* {
+  outline: 1px solid red;
+}
 
 body {
-  min-width: 1200px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 50%;
+  margin-left:-580px;
+  width: 1160px;
   background-color: #ffffff;
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
-  line-height: 1.3em;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0.01em;
   color: #000;
+ }
+
+/* Оглашение тегов и класов для которых нужен шрифт Gilroy */
+.popular, .footer-services, .price-filter-label, .price-filter-input, td, .logo, .logo-footer, .main-nav, h2, h6, .btn{
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 400;
 }
+
+
 
 /* Хедер */
 
 header {
   background-color: #f7e296;
   margin-top: 40px;
-  height: 299px;
-  width: 1160px;
-  padding: 0 60px 47px 60px;
+  height: 245px;
+  padding: 0 60px 55px 55px;
 }
 
 a {
   text-decoration: none;
+  color: #000000;
+}
+.for-client {
+  width: 473px;
+  display: flex;
+  justify-content: space-between;
 }
 
+.search-form {
+  text-decoration: none;
+}
 
+.compare {
+  margin-left: 180px;
+}
+
+.basket{
+  margin-right: -2px;
+}
+
+.client-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-bottom: 40px;
+
+}
+.login{
+
+}
+
+.main-nav {
+  margin-left: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-size: 18px;
+  background-color: #f7e184;
+}
+.main-nav li {
+
+}
+
+/* Конец Хедера */
+
+.breadcrumbs {
+  font-size: 14px;
+}
 
 /* Содержательная часть сайта (Мейн) */
 
-h1{
+h1, h2 {
+  font-size: 47px;
+  font-weight: 700;
+}
+
+h6{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+  color: #464646;
+}
+
+strong{
+  text-transform: uppercase;
+}
+
+.popular {
+  display: flex;
+  justify-content: space-between;
+}
+.popular:active {
+  opacity: 0.3;
+}
+.popular-logo {
+  background-color: #f7e296;
+}
+.popular-logo:hover {
+  background-color: #f0c52e;
+}
+.popular-logo:active {
+  background-color: #f0c52e;
+}
+
+.slider table {
+  float: right;
+  vertical-align: middle;
+  text-align: left;
+  height: 100px;
+  width: 480px;
+  margin: 20px;
+  padding: 20px;
+}
+.slider td {
+  font-size: 36px;
+}
+.slider th {
+  font-size: 13px;
+}
+
+.services {
+  background-color: #e5e5e5;
+}
+
+      /* Разметка классов */
+
+      /* Логотип DEVICE */
+.logo {
+  display: inline-block;
+  margin-top: -50px;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
+}
+.logo-footer {
+  display: inline-block;
+  margin-top: 45px;
+  color: rgba(255, 198, 0, 1);
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.logo:hover{
+  opacity: 0.6;
+}
+.logo:active{
+  opacity: 0.3;
+}
+      /* Конец Логотипа DEVICE */
+
+.about-us {
+  width: 450px;
+  float: left;
+  clear: right;
+  min-height: 600px;
+}
+
+.contacts{
+  width: 40%;
+  clear: left;
+}
+.contacts h2 {
+  padding-bottom: 50px;
+}
+.contacts p {
+  margin-bottom: 50px;
+}
+
+      /* Футер!!!! */
+
+.footer {
+  clear: both;
+  margin-top: 20px;
+  width: 100%;
+  height: 323px;
+  color: #fff;
+  background-color: #464646;
 
 }
 
-h2 {
-
+.logo-text{
+  float: left;
+  padding: 20px;
 }
 
+.logo-1 {
+    width: 300px;
+    height: 75px;
+
+ /* background: url(../img/logo-1.jpg); */
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 11px 0;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.btn:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.btn::after {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: #f0c52e;
+  border: 1px solid;
+  border-color: #f4d361 #f1c83a;
+  z-index: -1;
+}
+
+.contacts-map {
+  background-color: #e7e7e6;
+  height: 221px;
+  width: 560px;
+}
+
+
+.catalog-price {
+  font-size: 16px;
+}
+
+.popup {
+  display: none;
+}
+
+.logotype-popular {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.contact-info {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contacts {
+  width: 560px;
+}
