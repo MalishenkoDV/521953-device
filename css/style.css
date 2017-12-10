@@ -44,10 +44,6 @@ html {
   display: none;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 /* Разметка тегов */
 
 body {
@@ -442,7 +438,7 @@ main h2 {
   border-radius: 50%;
   border: 4px solid rgba(0, 0, 0, 0.3);
   background-color: white;
-
+}
 .slider-buttons label:hover {
   border-color: rgba(0, 0, 0, 0.4);
 }
