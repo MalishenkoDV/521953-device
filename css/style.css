@@ -27,8 +27,8 @@
   font-style: normal;
 }
 
-
 /* Глобальные к html */
+
 html {
   box-sizing: border-box;
 }
@@ -42,6 +42,9 @@ html {
 }
 .visually-hidden {
   display: none;
+}
+* {
+  outline: 1px solid red;
 }
 
 /* Разметка тегов */
@@ -72,30 +75,39 @@ h1, h2 {
   font-size: 47px;
   font-weight: 800;
 }
-
-h3 {
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
 h6{
   font-size: 18px;
   font-weight: 700;
 }
-
 p {
   font-weight: 400;
   color: #464646;
 }
-
 strong{
   text-transform: uppercase;
 }
+
 /* Оглашение тегов и класов для которых нужен шрифт Gilroy */
-.popular, .footer-services, .price-filter-label, .price-filter-input, td, .logo, .logo-footer, .main-nav,h1, h2, h3, h6, .btn{
+
+.popular,
+.footer-services,
+.price-filter-label,
+.price-filter-input,
+.logo,
+.logo-footer,
+.main-nav,
+td,
+h1,
+h2,
+h3,
+h6,
+.about-us ul,
+.write-to-us label,
+.menu-catalog ul,
+.btn,
+.number {
   font-family: Gilroy, Arial, sans-serif;
 }
-
 .main-header .container {
   margin-top: 40px;
   background-color: #ffe27f;
@@ -117,41 +129,75 @@ strong{
   margin: 0 auto;
   position: relative;
 }
+.sliders-goods-controls {
+  position: absolute;
+  right: 62px;
+  top: 330px;
+  width: 120px;
+  height: 10px;
+  font-size: 0;
+  letter-spacing: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+.sliders-goods-control {
+  display: inline-block;
+  vertical-align: top;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  margin-right: 23px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.sliders-goods-control:last-child {
+  margin-right: 0;
+}
+.sliders-goods-control:hover {
+  opacity: 0.4;
+}
+.sliders-goods-control:active {
+  opacity: 1;
+}
 .main-header .container {
   margin-top: 40px;
   background-color: #ffe27f;
 }
-.services-slider, {
+.services-slider {
   margin: 0 auto;
   position: relative;
   top: -100px;
   padding-left: 2px;
 }
 .main-navigation input:focus {
-  color: rgba( 0, 0, 0, 1);
-  border-bottom: 2px solid black;
+  color: /*rgba( 0, 0, 0, 1);*/#000;
+  border-bottom: 2px solid #000;
   outline: none;
 }
-
 .client-menu {
   position: relative;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: -26px;
+  height: 24px;
+  padding-bottom: 16px;
+  margin-top: -25px;
 }
 .client-menu .search-btn {
   visibility: hidden;
   display: inline-block;
   vertical-align: baseline;
   position: absolute;
-  left: 355px;
+  left: 356px;
   bottom: 4px;
-  width: 80px;
-  height: 45px;
+  width: 85px;
+  height: 49px;
   background-color: transparent;
   background-image: none;
   border: 2px solid black;
-  padding-left: 0;
+  padding-left: 4px;
 }
 .client-menu input:focus {
   color: rgba( 0, 0, 0, 1);
@@ -172,20 +218,23 @@ strong{
 .client-menu a {
   display: inline-block;
   vertical-align: baseline;
-  margin-right: 3px;
-  padding-left: 31px;
+  margin-right: 2px;
+  padding-left: 30px;
   background-repeat: no-repeat;
-  background-position: 5px 8px;
+  background-position: 11px 7px;
 }
 .client-menu .login {
   float: left;
-  margin-left: 182px;
+  margin-left: 179px;
   padding-right: 15px;
   max-width: 184px;
   overflow: hidden;
   text-overflow: clip;
   background-image: url(../img/spritesheet.png);
-  background-position: -156px -195px;
+  background-position: -142px -500px;
+}
+.for-client {
+  letter-spacing: 0.001em;
 }
 .inner .logout {
   padding-left: 4px;
@@ -193,27 +242,28 @@ strong{
 .client-menu .compare {
   float: right;
   padding-right: 30px;
-  background-image: url(../img/spritesheet.png);
-  background-position: -156px -284px;
+  background-image: url(../img/compare.svg);/*
+  background-position: -84px -687px;*/
 }
 .client-menu .basket {
   float: right;
   background-image: url(../img/spritesheet.png);
-  background-position: -156px -231px;
+  background-position: -139px -662px;
 }
-
 .search {
   float: left;
-  width: 355px;
+  width: 358px;
+  height: 50px;
   font-size: 15px;
-  padding-left: 41px;
-  margin-top: 5px;
+  padding-left: 40px;
+  margin-top: -14px;
   border: none;
   background-color: #ffe27f;
-  background-image: url(../img/spritesheet.png);
+  background-image: url(../img/search.svg);
   background-repeat: no-repeat;
-  background-position: -136px -426px;
+  background-position: 4px 18px;
   color: rgba( 0, 0, 0, 0.3);
+  letter-spacing: 0.018em;
 }
 .search::-webkit-input-placeholder {
   color: rgba( 0, 0, 0, 0.3);
@@ -242,24 +292,17 @@ strong{
 .search:focus:-ms-input-placeholder {
   color: rgba( 0, 0, 0, 1);
 }
-
-
-
-
-
-.main-nav {
+.main-nav {/*edited in index*/
   margin-left: 59px;
-  margin-right: 56px;
-  margin-top: 39px;
-  padding-bottom: 29px;
-  font-family: 'Gilroy', Arial, sans-serif;
+  margin-right: 57px;
+  margin-top: 24px;
+  padding-bottom: 48px;
   font-weight: 900;
   font-size: 18px;
   color: black;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
-
 .level {
   text-align: right;
   padding-left: 0;
@@ -268,6 +311,10 @@ strong{
   display: inline-block;
   vertical-align: baseline;
   width: 130px;
+  background-position: 230px 5px;
+  background-image: url(../img/plus1.svg);
+  background-repeat: no-repeat;
+  color: #aaaaaa;
 }
 .level>li:first-child {
   float: left;
@@ -280,7 +327,6 @@ strong{
 .level>li:last-child {
   margin-left: 93px;
 }
-
 .first-name:hover .menu-catalog {
   display: inline-block;
   vertical-align: baseline;
@@ -290,7 +336,6 @@ strong{
   vertical-align: baseline;
 }
 .first-name:after {
-  content: '+';
   position: absolute;
   padding-left: 10px;
   font-size: 38px;
@@ -308,12 +353,12 @@ strong{
   position: absolute;
   display: none;
   width: 1130px;
-  top: 173px;
+  top: 139px;
   left: 0px;
   background-color: #ffe27f;
   padding-top: 40px;
   padding-left: 20px;
-  padding-bottom: 35px;
+  padding-bottom: 14px;
   z-index: 10;
   font-size: 15px;
   font-weight: 300;
@@ -325,10 +370,16 @@ strong{
   list-style: none;
   vertical-align: top;
   margin-left: 40px;
+  margin-right: 16px;
+  letter-spacing: 0.001em;
+}
+.menu-catalog li {
+  padding-top: 2px;
+  padding-bottom: 12px;
 }
 .marker {
   width: 100%;
-  height: 95px;
+  height: 74px;
 }
 .marker hr {
   width: 100px;
@@ -338,26 +389,24 @@ strong{
   border: none;
   background-color: #ffffff;
 }
-
 main {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-main h2 {
-  font-family: 'Gilroy', Arial, sans-serif;
+main h2 {/*
+  font-family: 'Gilroy', Arial, sans-serif; color: #f00;*/
   font-size: 47px;
   line-height: 56px;
   font-weight: 900;
   margin: 0;
-  margin-left: -3px;
+  margin-left: 0px;
   margin-top: 3px;
-  letter-spacing: 0.012em;
+  letter-spacing: 0.01em;
 }
-
 .slide-1 img {
-  padding-left: 90px;
+  padding-left: 89px;
   margin-top: -111px;
   position: relative;
 }
@@ -376,19 +425,20 @@ main h2 {
   vertical-align: top;
   margin-top: -35px;
   opacity: 0.999;
+  width: 560px;
 }
 .slide-description p {
-  padding-top: 4px;
-  width: 485px;
-  margin-bottom: 1px;
-  letter-spacing: 0.01em;
+  padding-top: 19px;
+  line-height: 30px;
+  width: 490px;
+  margin-bottom: 48px;
+  letter-spacing: 0.001em;
 }
 .number {
   position: absolute;
-  right: 55px;
+  right: 56px;
   top: -110px;
   width: 175px;
-  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 180px;
   font-weight: 900;
   line-height: 150px;
@@ -397,8 +447,6 @@ main h2 {
 .slide-description .btn {
   margin-left: 1px;
 }
-
-
 .slide-description table {
   margin-left: -2px;
   table-layout: fixed;
@@ -406,7 +454,6 @@ main h2 {
   text-align: left;
 }
 .slide-description td {
-  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 36px;
   line-height: 58px;
 }
@@ -414,7 +461,6 @@ main h2 {
   width: 138px;
 }
 .slide-description th {
-  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 16px;
 }
@@ -437,7 +483,7 @@ main h2 {
   height: 4px;
   border-radius: 50%;
   border: 4px solid rgba(0, 0, 0, 0.3);
-  background-color: white;
+  background-color: #fff;
 }
 .slider-buttons label:hover {
   border-color: rgba(0, 0, 0, 0.4);
@@ -527,11 +573,11 @@ main h2 {
   align-items: flex-end;
 }
 .popular span {
-  display: inline-block;
-  font-family: 'Gilroy', Arial, sans-serif;
+  display: inline-block;/*
+  font-family: 'Gilroy', Arial, sans-serif; color: #F00;*/
   font-weight: 900;
   font-size: 18px;
-  color: black;
+  color: #000;
   line-height: 21px;
   vertical-align: top;
   letter-spacing: 0.020em;
@@ -568,11 +614,11 @@ main h2 {
 }
 .services-slider label {
   display: block;
-  margin-bottom: 24px;
-  font-family: 'Gilroy', Arial, sans-serif;
+  margin-bottom: 24px;/*
+  font-family: 'Gilroy', Arial, sans-serif; color: #F00;*/
   font-weight: 900;
   font-size: 18px;
-  color: black;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -648,7 +694,6 @@ main h2 {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
 }
-
 .service-item h2 {
     padding-bottom: 13px;
     padding-left: 4px;
@@ -673,7 +718,6 @@ main h2 {
 .logo-1:hover {
   background: url(../img/logo-1_hover.jpg);
 }
-
 .logo-2 {
   background: url(../img/logo-2.jpg);
   width: 260px;
@@ -681,7 +725,6 @@ main h2 {
 .logo-2:hover {
   background: url(../img/logo-2_hover.jpg);
 }
-
 .logo-3 {
   width: 260px;
   background: url(../img/logo-3.jpg);
@@ -689,7 +732,6 @@ main h2 {
 .logo-3:hover {
   background: url(../img/logo-3_hover.jpg);
 }
-
 .logo-4 {
   width: 260px;
   background: url(../img/logo-4.jpg);
@@ -697,7 +739,6 @@ main h2 {
 .logo-4:hover {
   background: url(../img/logo-4_hover.jpg);
 }
-
 .contact-info {
   width: 1160px;
   margin: 0 20px;
@@ -719,7 +760,7 @@ main h2 {
   vertical-align: baseline;
   width: 80px;
   height: 7px;
-  background-color: #000000;
+  background-color: #000;
 }
 .about-us h2,
 .contacts h2 {
@@ -732,8 +773,8 @@ main h2 {
 }
 .about-us ul {
   padding: 0;
-  margin-top: 66px;
-  font-family: 'Gilroy', Arial, sans-serif;
+  margin-top: 66px;/*
+  font-family: 'Gilroy', Arial, sans-serif; color: #f00;*/
   font-size: 16px;
   font-weight: 900;
 }
@@ -754,7 +795,6 @@ main h2 {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
 }
-
 .about-us .btn {
   margin-top: 38px;
   padding-left: 22px;
@@ -791,19 +831,15 @@ main h2 {
   margin-left: -480px;
   box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.5);
 }
-
 .contacts-map-show, .write-to-us-show {
   display: block;
   animation: cartoon 1.5s;
 }
-
 .modal-error {
 animation: shake 0.6s;
 }
-
-
 .write-to-us {
-  background-color: white;
+  background-color: #fff;
   width: 760px;
   height: 359px;
   padding: 100px;
@@ -813,8 +849,8 @@ animation: shake 0.6s;
 .write-to-us label {
   width: 360px;
   display: inline-block;
-  vertical-align: baseline;
-  font-family: 'Gilroy', Arial, sans-serif;
+  vertical-align: baseline;/
+  font-family: 'Gilroy', Arial, sans-serif;/* color: #f00;*/
   font-size: 18px;
   font-weight: 900;
 }
@@ -823,19 +859,19 @@ animation: shake 0.6s;
 }
 .write-to-us p {
   margin-top: 40px;
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-size: 18px;
   font-weight: 900;
 }
 .write-to-us input,
 .write-to-us textarea {
-  padding-left: 20px;
-  font-family: 'Open Sans', Arial, sans-serif;
+  padding-left: 20px;/*
+  font-family: 'Open Sans', Arial, sans-serif; color: #f00;*/
   font-size: 14px;
   font-weight: 500;
   line-height: 50px;
   background-color: #f3f3f3;
-  color: black;
+  color: #000;
   border: none;
   overflow: hidden;
 }
@@ -879,7 +915,7 @@ background-color: #e5e5e5;
   right: 22px;
   border-radius: 50%;
   background-color: #ffc600;
-  border: 1px solid #ffc600;
+  border: 1px solid #fdc303;
   opacity: 0.5;
   font-size: 0;
 }
@@ -891,7 +927,7 @@ background-color: #e5e5e5;
   height: 3px;
   left: 10px;
   top: 25px;
-  background-color: white;
+  background-color: #fff;
 }
 .btn-close:before {
   transform: rotate(45deg)
@@ -906,20 +942,14 @@ background-color: #e5e5e5;
 .btn-close:active::after {
   opacity: 0.4;
 }
-
-
-
-
-
 .logo {
   position: relative;
   top: -36px;
-  margin-left: 56px;
-  letter-spacing: 0.01em;
-  font-family: 'Gilroy', Arial, sans-serif;
+  margin-left: 57px;
+  letter-spacing: 0.015em;
   font-weight: 900;
   font-size: 48px;
-  color: black;
+  color: #000;
 }
 .inner .logo {
   top: -13px;
@@ -942,8 +972,8 @@ background-color: #e5e5e5;
   display: inline-block;
   vertical-align: baseline;
   margin-top: -21px;
-  margin-left: -1px;
-  font-family: 'Gilroy', Arial, sans-serif;
+  margin-left: -1px;/*
+  font-family: 'Gilroy', Arial, sans-serif; color: #f00;*/
   font-weight: 900;
   font-size: 48px;
   color: #ffe27f;
@@ -960,7 +990,7 @@ background-color: #e5e5e5;
   color: rgba( 255, 198, 0, 0.3);
 }
 .address {
-  color: white;
+  color: #fff;
   margin-top: 14px;
   margin-bottom: 30px;
 }
@@ -1028,7 +1058,6 @@ background-color: #e5e5e5;
   background-image: url(../img/spritesheet.png);
   background-position: -156px -243px;
 }
-
 .menu-centre a:active {
   opacity: 0.3;
 }
@@ -1045,7 +1074,6 @@ background-color: #e5e5e5;
   background-repeat: no-repeat;
   background-image: url(../img/spritesheet.png);
   background-position: -0px -547px;
-
   font-size: 0;
   opacity: 0.3;
 }
@@ -1063,23 +1091,22 @@ background-color: #e5e5e5;
   background-image: url(../img/spritesheet.png);
   background-position: -78px -547px;
 }
-
 .form {
-    display: inline-block;
-    width: 201px;
-    text-align: left;
-    padding-right: 68px;
-    padding-top: 42px;
+  display: inline-block;
+  width: 201px;
+  text-align: left;
+  padding-right: 68px;
+  padding-top: 42px;
 }
 .form h3 {
-    margin-top: 26px;
-    margin-bottom: 0;
-    padding: 10px 0;
-    border-top: 2px solid #000000;
-    font-family: 'Gilroy', Arial, sans-serif;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 900;
+  margin-top: 26px;
+  margin-bottom: 0;
+  padding: 10px 0;
+  border-top: 2px solid #000;/*
+  font-family: 'Gilroy', Arial, sans-serif; color: #f00;*/
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
 }
 .form .btn {
   margin-left: -1px;
@@ -1090,7 +1117,6 @@ background-color: #e5e5e5;
   display: inline-block;
   vertical-align: baseline;
 }
-
 
 /* FOOTER!!! */
 
@@ -1133,20 +1159,18 @@ background-color: #e5e5e5;
   vertical-align: baseline;
   margin-top: 0px;
   margin-left: -1px;
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 900;
   font-size: 48px;
   color: #ffe27f;
   opacity: 1;
 }
-
 .logo-footer a:hover {
   opacity: 0.6;
 }
 .logo-footer a:active {
   opacity: 0.3;
 }
-
 .main-footer .footer-login {
   float: right;
   margin-top: -6px;
@@ -1154,9 +1178,8 @@ background-color: #e5e5e5;
   text-align: right;
   opacity: 1;
 }
-
 .phone {
-  color: white;
+  color: #fff;
   text-align: right;
   margin-top: 45px;
   margin-bottom: 30px;
@@ -1164,7 +1187,6 @@ background-color: #e5e5e5;
 .footer-menu {
   display: inline-block;
   vertical-align: baseline;
-
   margin-top: 64px;
   margin-left: 83px;
   padding-bottom: 10px;
@@ -1183,7 +1205,7 @@ background-color: #e5e5e5;
 }
 .menu-centre a {
   color: #ffffff;
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;/* color: #f00;*/
   font-weight: 900;
   font-size: 18px;
   text-transform: uppercase;
@@ -1209,7 +1231,6 @@ background-color: #e5e5e5;
   background-repeat: no-repeat;
   background-image: url(../img/spritesheet.png);
   background-position: -5px -561px;
-
   font-size: 0;
   opacity: 0.3;
 }
@@ -1227,13 +1248,15 @@ background-color: #e5e5e5;
   background-image: url(../img/spritesheet.png);
   background-position: -5px -825px;
 }
-    /* END FOOTER!!! */
-    /* Навигация по стр (бредкрамбс и пагинация) */
+  /* END FOOTER!!! */
+
+  /* Навигация по стр (бредкрамбс и пагинация) */
+
 .breadcrumbs-start {
-    padding-left: 60px;
-    padding-top: 33px;
-    background-color: #ffffff;
-    letter-spacing: 0.04em;
+  padding-left: 60px;
+  padding-top: 33px;
+  background-color: #ffffff;
+  letter-spacing: 0.04em;
 }
 .breadcrumbs {
   font-size: 13px;
@@ -1285,17 +1308,16 @@ background-color: #e5e5e5;
 .pagination-active {
   color: #000;
 }
+
       /* Конец навигации по стр (бредкрамбс и пагинация) */
 
-
-.inner h1 {
-  font-family: 'Gilroy', Arial, sans-serif;
+.inner h1 {/*
+  font-family: Gilroy, Arial, sans-serif; color: #f00;*/
   font-size: 47px;
   line-height: 56px;
   font-weight: 900;
   margin: 0;
 }
-
 .inner-container {
   flex-grow: 1;
   margin-bottom: -5px;
@@ -1316,16 +1338,16 @@ aside.filters {
 
 }
 .filters h2 {
-    display: inline-block;
-    text-align: right;
-    padding-right: 180px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    font-family: 'Gilroy', Arial, sans-serif;
-    font-weight: 900;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
+  display: inline-block;
+  text-align: right;
+  padding-right: 180px;
+  padding-top: 7px;
+  padding-bottom: 7px;/*
+  font-family: Gilroy, Arial, sans-serif; color: #f00;*/
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 .filters .btn {
   margin-top: 27px;
@@ -1341,12 +1363,13 @@ aside.filters {
   margin-top: 26px;
   margin-bottom: 0;
   padding: 10px 0;
-  border-top: 2px solid #000000;
-  font-family: 'Gilroy', Arial, sans-serif;
+  border-top: 2px solid #000;/*
+  font-family: Gilroy, Arial, sans-serif;*/
   font-size: 18px;
   line-height: 26px;
   font-weight: 900;
 }
+
 /*  Start Range filter  */
 
 .range-filter {
@@ -1377,7 +1400,7 @@ aside.filters {
   cursor: pointer;
   border: 3px solid #000;
   border-radius: 50%;
-  background: #ffffff;
+  background: #fff;
 }
 .range-controls .toggle:active {
   background-color: #63b000;
@@ -1401,14 +1424,15 @@ aside.filters {
   width: 44%;
   opacity: 0.2;
 }
-.price-controls input {
-  font-family: 'Gilroy', Arial, sans-serif;
+.price-controls input {/*
+  font-family: Gilroy, Arial, sans-serif; color: #f00;*/
   font-size: 14px;
   width: 33px;
   color: #283136;
   border: none;
   background: #f1f1f1;
 }
+
 /*  End Range filter  */
 
 .color,
@@ -1488,7 +1512,7 @@ aside.filters {
   height: 5px;
   left: 6px;
   margin-top: 11px;
-  border: 2px solid black;
+  border: 2px solid #000;
   border-radius: 50%;
 }
 .form .btn {
@@ -1519,8 +1543,8 @@ aside.filters {
   padding-left: 73px;
   padding-right: 46px;
   padding-top: 7px;
-  padding-bottom: 7px;
-  font-family: 'Gilroy', Arial, sans-serif;
+  padding-bottom: 7px;/*
+  font-family: Gilroy, Arial, sans-serif; color: #f00;*/
   font-weight: 900;
   font-size: 16px;
   text-transform: uppercase;
@@ -1533,8 +1557,8 @@ aside.filters {
 .sorting label {
   margin-right: 23px;
   cursor: pointer;
-  letter-spacing: 0;
-  font-family: 'Open Sans', Arial, sans-serif;
+  letter-spacing: 0;/*
+  font-family: 'Open Sans', Arial, sans-serif; color: #f00;*/
   color: rgba(0, 0, 0, 0.3);
 }
 .sorting label:hover {
@@ -1569,19 +1593,18 @@ aside.filters {
   opacity: 0.2;
 }
 .keys-updown a:hover {
-opacity: 0.4;
+  opacity: 0.4;
 }
 .keys-updown a:active {
-opacity: 1;
+  opacity: 1;
 }
-
 .keys-updown a:last-child {
   background-image: url(../img/spritesheet.png);
   background-position: -5px -5px;
 }
 .items {
   padding-top: 58px;
-  padding-left: 37px;
+  padding-left: 30px;
   vertical-align: top;
 }
 .item {
@@ -1596,25 +1619,23 @@ opacity: 1;
 .item:hover .item-hover {
   display: block;
 }
-
 .new:before{
-content: 'NEW';
-display: block;
-position: absolute;
-right: 27px;
-top: 29px;
-width: 56px;
-height: 42px;
-border: 2px solid rgba(0,0,0,0.1);
-border-radius: 50%;
-
-padding-top: 14px;
-text-align: center;
-color: rgba(0,0,0,0.2);
-font-family: 'Gilroy', Arial, sans-serif;
-font-weight: 900;
-font-size: 14px;
-text-transform: uppercase;
+  content: 'NEW';
+  display: block;
+  position: absolute;
+  right: 27px;
+  top: 29px;
+  width: 56px;
+  height: 42px;
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 50%;
+  padding-top: 14px;
+  text-align: center;
+  color: rgba(0,0,0,0.2);
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .item .item-hover {
@@ -1639,7 +1660,7 @@ text-transform: uppercase;
   height: 40px;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 16px, #ffc600 16px, #ffc600 24px, rgba(255, 255, 255, 0) 24px);
   color: black;
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;/* color: #f00;*/
   font-weight: 900;
   font-size: 18px;
   letter-spacing: 0.2em;
@@ -1675,7 +1696,7 @@ text-transform: uppercase;
   display: inline-block;
   vertical-align: top;
   width: 270px;
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;/* color: #f00;*/
   font-weight: 900;
   font-size: 18px;
   line-height: 21px;
@@ -1700,7 +1721,7 @@ text-transform: uppercase;
   line-height: 70px;
   text-align: center;
   background-color: #ebebeb;
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;/* color: #f00;*/
   font-weight: 900;
   font-size: 16px;
   text-transform: uppercase;
