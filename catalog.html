@@ -5,9 +5,11 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Девайс-Каталог</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
   </head>
   <body>
-      <header class="main-header">
+      <header class="catalog-header">
         <div class="container">
           <div class="logo">
               <a href="index.html">DEVICE</a>
@@ -17,12 +19,11 @@
             <input class="search" type="search" placeholder="Поиск по сайту">
             <button class="search-btn" type="submit" >Найти</button>
           </form>
-          <div class="for-client">
-            <a class="login" href="#">Валентин Петухов</a>
+          <div class="cat-for-client">
+            <a class="login-client" href="#">Валентин Петухов</a>
             <a class="logout" href="#">Выйти</a>
-            <a class="basket" href="#" title="Оформить заказ">Корзина</a>
             <a class="compare" href="#" title="Рассмотрите детально преимущества">Сравнить</a>
-
+            <a class="basket" href="#" title="Оформить заказ">Корзина</a>
           </div>
         </div>
           <nav class="main-nav">
@@ -62,25 +63,23 @@
             </ul>
           </nav>
           <div class="breadcrumbs-start">
-            <h1>Моноподы для селфи</h1>
-            <div class="breadcrumbs">
-              <ul>
-                <li>
-                  <a href="index.html">Главная</a>
-                </li>
-                <li>
-                  <a class="second-layer" href="#">Каталог товаров</a>
-                </li>
-                <li>
-                  Моноподы для селфи
-                </li>
-              </ul>
-            </div>
+            <h1 class="page-name">Моноподы для селфи</h1>
+            <ul class="breadcrumbs">
+              <li>
+                <a class="breadcrumbs-item" href="index.html">Главная</a>
+              </li>
+              <li class="breadcrumbs-arrow"></li>
+              <li>
+                <a class="breadcrumbs-item" href="#">Каталог товаров</a>
+              </li>
+              <li class="breadcrumbs-arrow"></li>
+              <li class="breadcrumbs-current">Моноподы для селфи</li>
+            </ul>
           </div>
         </div>
       </header>
 
-      <main class="catalog">
+      <main class="main catalog">
         <div class="inner-container">
           <aside class="filters">
             <h2>Фильтр:</h2>
@@ -111,7 +110,7 @@
                   <input id="white" type="checkbox" name="white" value="white">
                   <label for="white">Белый</label>
                   <input id="blue" type="checkbox" name="blue" value="blue" checked>
-                  <label for="blue">Биний</label>
+                  <label for="blue">Синий</label>
                   <input id="red" type="checkbox" name="red" value="red" checked>
                   <label for="red">Красный</label>
                   <input id="pink" type="checkbox" name="purple" value="purple">
@@ -124,7 +123,7 @@
                   <input id="no" type="radio" name="bluetooth" value="no">
                   <label for="no">Нет</label>
                 </div>
-                <button class="btn" type="submit" formaction="#">Показать</button>
+                <button class="form-btn btn" type="submit" formaction="#">Показать</button>
               </form>
             </div>
           </aside>
@@ -160,7 +159,7 @@
                   <a class="to-compare" href="#">Добавить к сравнению</a>
                 </div>
                 <a href="#">Любительская селфи-палка</a>
-                <span>500 РУБ.</span>
+                <p class="item-price">500 РУБ.</p>
               </div>
 
               <div class="item">
@@ -170,7 +169,7 @@
                   <a class="to-compare" href="#">Добавить к сравнению</a>
                 </div>
                 <a href="#">Профессиональная<br> селфи-палка</a>
-                <span>1 500 РУБ.</span>
+                <p class="item-price">1 500 РУБ.</p>
               </div>
 
               <div class="item">
@@ -180,7 +179,7 @@
                   <a class="to-compare" href="#">Добавить к сравнению</a>
                 </div>
                 <a href="#">Непотопляемая селфи-палка</a>
-                <span>2 500 РУБ.</span>
+                <p class="item-price">2 500 РУБ.</p>
               </div>
 
               <div class="item new">
@@ -190,7 +189,7 @@
                   <a class="to-compare" href="#">Добавить к сравнению</a>
                 </div>
                 <a href="#">Селфи-палка «Следуй за мной»</a>
-                <span>4 900 РУБ.</span>
+                <p class="item-price">4 900 РУБ.</p>
               </div>
             </div>
             <ul class="pagination">
@@ -209,38 +208,35 @@
       </main>
 
 
-    <footer class="main-footer">
-      <div class="container">
-        <div class="footer-logo">
-          <a href="index.html">DEVICE</a>
-          <p class="address">г. Москва, ул. Строителей, 15</p>
+      <footer class="main-footer">
+        <div class="container">
+          <div class="footer-logo">
+            <a href="index.html">DEVICE</a>
+            <p class="address">г. Москва, ул. Строителей, 15</p>
+          </div>
+          <div class="footer-menu">
+            <ul class="menu-center">
+              <li><a href="#">Доставка</a>
+              </li>
+              <li><a href="#">Гарантия</a>
+              </li>
+              <li><a class="footer-contacts" href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="footer-social">
+              <a class="social-btn social-btn-fb" target="_blank" href="https://www.facebook.com/htmlacademy">facebook</a>
+              <a class="social-btn social-btn-inst" target="_blank" href="https://www.instagram.com/htmlacademy/">instagram</a>
+              <a class="social-btn social-btn-twit" target="_blank" href="https://twitter.com/htmlacademy_ru">twiter</a>
+            </div>
+          </div>
+          <div class="footer-login">
+            <a class="footer-client-menu" href="#">Войти</a>
+            <a class="footer-client-menu" href="#">Сравнить</a>
+            <a class="footer-client-menu" href="#">Корзина</a>
+            <p class="phone">Тел.: +7 (495) 495-95-95</p>
+            <a class="icon-academy" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          </div>
         </div>
-
-        <div class="footer-login">
-          <a href="#">Войти</a>
-          <a href="#">Сравнить</a>
-          <a href="#">Корзина</a>
-          <p class="phone">Тел.: +7 (495) 495-95-95</p>
-          <a class="icon-academy" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        </div>
-        <div class="footer-menu">
-          <ul class="menu-at-center">
-            <li><a href="#">Доставка</a>
-            </li>
-            <li><a href="#">Гарантия</a>
-            </li>
-            <li><a href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-social">
-          <a class="social-btn social-btn-fb" target="_blank" href="https://www.facebook.com/htmlacademy">facebook</a>
-          <a class="social-btn social-btn-inst" target="_blank" href="https://www.instagram.com/htmlacademy/">instagram</a>
-          <a class="social-btn social-btn-twit" target="_blank" href="https://twitter.com/htmlacademy-ru">twiter</a>
-        </div>
-
-
-      </div>
-    </footer>
+      </footer>
   </body>
 </html>
