@@ -1472,7 +1472,7 @@ background-color: #e5e5e5;
   height: 23px;
   left: -1px;
   margin-top: -1px;
-}/*
+}
 .color input:checked:active + label:active {
   content: "";
   background-image: url(../img/checkbox-off.svg);
@@ -1494,7 +1494,7 @@ background-color: #e5e5e5;
   height: 23px;
   left: -1px;
   margin-top: -1px;
-}*/
+}
 .bluetooth input {
   width: 20px;
   height: 20px;
@@ -1503,10 +1503,10 @@ background-color: #e5e5e5;
 .bluetooth label:before {
   content: "";
   position: absolute;
-  width: 24px;/*25*/
-  height: 24px;/*28*//*
-  top: 14px;*/
-  left: -1px;
+  width: 25px;/*25*/
+  height: 53px;/*28*/
+  top: 14px;
+  left: 13px;
 }
 .bluetooth label:active::before {
   border-color: #aeaeae;
@@ -1518,21 +1518,21 @@ background-color: #e5e5e5;
   content: "";
   position: absolute;
   width: 25px;
-  height: 28px;
+  height: 25px;
   top: 14px;
   left: -2px;
   background-image: url(../img/radio-on.svg);
   background-repeat: no-repeat;
   background-position: 0px 0px;
-}/*
+}
 .bluetooth label:after {
   content: "";
   position: absolute;
   width: 25px;
   height: 28px;
   top: 14px;
-  left: 2px;
-}*/
+  left: 7px;
+}
 .bluetooth label:active::before {
   background-image: url(../img/radio-on.svg);
   background-repeat: no-repeat;
@@ -1543,12 +1543,45 @@ background-color: #e5e5e5;
   position: absolute;
   width: 25px;
   height: 28px;
-  top: 53px;
+  top: 55px;
   left: -2px;
   background-image: url(../img/radio-off.svg);
   background-repeat: no-repeat;
   background-position: 0px 0px;
+}/*
+.bluetooth label:before {
+  content: '';
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: -1px;
+  margin-top: 4px;
+  border: 2px solid #0f0;
+  border-radius: 50%;
 }
+.bluetooth label:hover::before {
+  border-color: #0dd;
+}
+.bluetooth label:active::before {
+  border-color: #eae;
+  background-image: url(../img/sradio-off.png);
+  background-position: 0px 0px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 6px;
+  top: 11px;
+}
+.bluetooth input:checked + label:after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 6px;
+  top: 11px;
+  background-image: url(../img/radio-on_active.png);
+  background-position: 0px 0px;
+}*/
 .catalog-item {
   width: 830px;
 
@@ -1557,8 +1590,7 @@ background-color: #e5e5e5;
   background-color: #ebebeb;
 }
 .sorting h2 {
-  padding-left: 70px;/*
-  padding-right: 46px;*/
+  padding-left: 70px;
   padding-top: 3px;
   padding-bottom: 8px;
   font-weight: 900;
